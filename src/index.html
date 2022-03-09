@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="progressive-player">
+        <div class="progressive-player__time">
+          <div class="progressive-player__current">0:00</div>
+          <div class="progressive-player__divider">/</div>
+          <div class="progressive-player__length"></div>
+        </div>
+        <div class="progressive-player__progressBarContainer">
+          <marquee class="songTitle" behavior="scroll" direction="right" scrollamount="2"></marquee>
+          <input class="progressive-player__progressBar" type="range">
+        </div>
+        <div class="progressive-player__audioContainer">
+          <button class="progressive-player__soundBtn">
+            <i class="fas fa-volume-up"></i>
+          </button>
+          <input class="progressive-player__audioProgressBar" type="range" min="0" max="1" step="0.01">
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name">
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="settingsBtn">
+      <i class="fas fa-cog"></i>
+    </button>
+    <div class="settingsPopup">
+      <header class="settingsPopup__header">
+        <h2>Settings</h2>
+        <select class="settingsPopup__language">
+          <option class="language__eng" value="en">EN</option>
+          <option class="language__ru" value="ru">RU</option>
+        </select>
+      </header>
+      <main class="settingsPopup__main">
+        <div class="settingsPopup__images">
+          <h4>Source of images:</h4>
+          <select class="settingsPopup__imagesAPI">
+            <option value="GitHub">GitHub</option>
+            <option value="Unsplash API">Unsplash API</option>
+            <option value="Flickr API">Flickr API</option>
+          </select>
+        </div>
+        <div class="settingsPopup__Hide">
+          <h4>Hide elements</h4>
+          <div class="hideElements">
+            <label class="audio-block" for="audio">audio-player
+              <input class="audio-block" id="audio" type="checkbox">
+            </label>
+            <label class="weather-block" for="weather">weather
+              <input class="weather-block" id="weather" type="checkbox">
+            </label>
+            <label class="quotes-block" for="quotes">quotes
+              <input class="quotes-block" id="quotes" type="checkbox">
+            </label>
+            <label class="time-data-block" for="time-date">time-date
+              <input class="time-data-block" id="time-date" type="checkbox">
+            </label>
+          </div>
+        </div>
+      </main>
+    </div>
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="logoGit">
+      <a class="logo" href="https://rs.school/" target="_blank"><img src="assets/img/logo.webp" alt="logo"></a>
+      <a class="Git" href="https://github.com/pnv13" target="_blank">pnv13</a>
+    </div>
+  </footer>
+</body>
+
+</html>

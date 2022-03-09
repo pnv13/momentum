@@ -1,0 +1,74 @@
+.settingsBtn {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background: none;
+  border: none;
+  color: #dddddd;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.settingsBtn:hover {
+  color: #ffffff;
+}
+
+.settingsPopup {
+  position: absolute;
+  left: -100%;
+  bottom: 0.5rem;
+  height: 40vh;
+  width: 30vw;
+  z-index: 1;
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 1rem;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+.settingsPopup.active {
+  left: 0.5rem;
+}
+
+.settingsPopup__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.settingsPopup__main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 1rem;
+}
+
+.settingsPopup__images {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+.settingsPopup__Hide {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.hideElements {
+  display: flex;
+  justify-content: space-evenly;
+
+  label {
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
